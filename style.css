@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gaegu', cursive;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(111, 119, 74, 0.972);
+  background-image: url(./Assets/228654_math-png.png);
+  background-size: cover;
+
+  margin: auto;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#start-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-box {
+  width: 20rem;
+}
+
+#button-start {
+  width: 10rem;
+  height: 5rem;
+
+  border-radius: 1rem;
+  border: none;
+
+  font-size: 4rem;
+
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+  background-color: rgb(246, 247, 197);
+}
+
+#button-start:hover {
+  background-color: rgb(252, 247, 155);
+}
+
+#button-start:active {
+  background-color: rgb(255, 247, 103);
+}
+
+#game {
+  display: none;
+}
+
+#title {
+  width: 40rem;
+  background-color: rgb(246, 247, 197);
+  margin-top: 3rem;
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+  border-radius: 50px;
+
+  font-size: 5rem;
+  color: rgb(0, 167, 0);
+}
+
+#countdown {
+  background-color: rgb(246, 247, 197);
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+
+  border-radius: 50px;
+  width: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  height: 3rem;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#game-box {
+  width: 40rem;
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 247, 197);
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+  border-radius: 50px;
+}
+
+#numbers-box {
+  width: 50%;
+  height: 12rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  background-color: rgb(250, 245, 235);
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+
+  font-size: 5rem;
+}
+
+#numbers-box input {
+  border: none;
+  width: 5rem;
+
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+}
+
+#user-answer-box {
+  margin-bottom: 1rem;
+}
+
+#user-answer {
+  width: 40%;
+  height: 3rem;
+  background-color: rgb(250, 245, 235);
+  border: none;
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+#user-answer:focus {
+  outline: none;
+}
+
+#calc-button {
+  width: 8rem;
+  height: 3rem;
+
+  font-size: 1.8rem;
+
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0 0 5px rgba(202, 202, 0, 0.46);
+}
+
+#calc-button:active {
+  background-color: rgb(232, 232, 232);
+}
+
+#historic-box {
+  width: 50%;
+  height: 100%;
+  margin-top: 2rem;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: none;
+}
+
+#historic {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+
+  font-size: 2rem;
+  color: green;
+}
+
+#score-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#score {
+  width: 3rem;
+  max-width: fit-content;
+
+  background: none;
+  border: none;
+
+  font-size: 1.5rem;
+}
+
+/* ============ ANIMATIONS ============*/
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#first-product {
+  animation: fadein 0.5s;
+}
+
+#between-signal {
+  animation: fadein 0.5s;
+}
+
+#second-product {
+  animation: fadein 0.5s;
+}
+
+#historic span:last-child {
+  animation: fadein 300ms;
+}

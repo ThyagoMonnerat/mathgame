@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mathplay</title>
+  </head>
+  <body>
+    <div id="start-menu">
+    
+      <div id="start-box">
+        <button id="button-start">Play</button>       
+      </div>
+    </div>
+     <div id="game">
+      <header>
+        <h1 id="title">Math.play</h1>
+        <input type="number" id="countdown" value="" disabled>
+      </header>
+      <nav>
+        <div id="game-box">
+          <div id="numbers-box">
+            <input type="number" disabled id="first-product" value=""></input>
+            <span id="between-signal"></span>
+            <input type="number" disabled id="second-product" value=""></input>
+          </div>
+          <div id="user-answer-box">
+            <input type="number" id="user-answer" autofocus placeholder="Digite o resultado" >
+          </div>
+          <div id="calc-button-box">
+            <button id="calc-button" type="submit">Calcular</button>
+          </div>
+          <div id="historic-box">
+            <div id="historic">
+              
+            </div>
+          </div>
+          <div id="score-box">
+            <p>Pontos:</p>
+            <input type="number" disabled id="score" value="0"></input>
+          </div>
+        </div>
+      </nav>
+     </div>
+     
+    
+    <script src="../script.js"></script>
+  </body>
+</html>
+
+
